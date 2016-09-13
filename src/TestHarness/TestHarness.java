@@ -1,9 +1,7 @@
 package TestHarness;
 
 import java.io.File;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Iterator;
 
 import javax.servlet.http.HttpServlet;
 import javax.xml.parsers.SAXParser;
@@ -12,9 +10,7 @@ import javax.xml.parsers.SAXParserFactory;
 import org.xml.sax.Attributes;
 import org.xml.sax.helpers.DefaultHandler;
 
-import edu.upenn.cis.cis555.webserver.HttpResponse;
-import edu.upenn.cis.cis555.webserver.HttpServer;
-import edu.upenn.cis.cis555.webserver.HttpWorker;
+import com.dhiva.server.ServerApp;
 
 /**
  * @author Todd J. Green, modified by Nick Taylor
@@ -128,7 +124,7 @@ public class TestHarness {
 		return servlets;
 	}
 	
-	public void invokeTestHarness(CreateResponse httpServer) throws Exception{
+	public void invokeTestHarness( ServerApp httpServer) throws Exception{
 		Handler handler = parseWebdotxml(httpServer.getWebxmlPath());
 		httpServer.setServletMapping(handler.m_servletMapping);
 		httpServer.setServletContext(createContext(handler));

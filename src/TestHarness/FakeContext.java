@@ -1,4 +1,4 @@
-package TestHarness;
+package edu.upenn.cis.cis555.webserver.TestHarness;
 
 import javax.servlet.*;
 import java.util.*;
@@ -118,11 +118,5 @@ public class FakeContext implements ServletContext {
 	
 	void setInitParam(String name, String value) {
 		initParams.put(name, value);
-	}
-
-	@Override
-	public String getContextPath() {
-		// TODO Auto-generated method stub
-		return null;
 	}
 }

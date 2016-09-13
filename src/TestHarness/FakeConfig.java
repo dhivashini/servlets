@@ -1,4 +1,5 @@
-package TestHarness;
+package edu.upenn.cis.cis555.webserver.TestHarness;
+
 import javax.servlet.*;
 import java.util.*;
 

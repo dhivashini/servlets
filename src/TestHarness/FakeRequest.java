@@ -1,4 +1,4 @@
-package TestHarness;
+package edu.upenn.cis.cis555.webserver.TestHarness;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

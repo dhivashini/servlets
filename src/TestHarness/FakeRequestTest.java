@@ -1,4 +1,4 @@
-package TestHarness;
+package edu.upenn.cis.cis555.webserver.TestHarness;
 
 
 import edu.upenn.cis.cis555.webserver.HttpRequest;
